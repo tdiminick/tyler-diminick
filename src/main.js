@@ -19,7 +19,10 @@ function navigate(pageId) {
   page.classList.add("active");
   document.querySelector(`[data-page="${pageId}"]`)?.classList.add("active");
 
-  history.replaceState(null, "", pageId === "home" ? "/" : `#${pageId}`);
+  const url = pageId === "home" ? "/" : `#${pageId}`;
+  if (location.hash.replace("#", "") !== pageId) {
+    history.pushState(null, "", url);
+  }
 
   const reveals = page.querySelectorAll(".reveal");
   reveals.forEach((el) => el.classList.remove("visible"));
@@ -71,5 +74,6 @@ function setupDualCards() {
 
 setupDualCards();
 
-// Navigate to the page in the URL hash, or home
+window.addEventListener("popstate", () => navigate(getPageFromHash()));
+
 navigate(getPageFromHash());
