@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Opens a dev server at `http://localhost:5173` with hot reload.
+Opens a dev server at `http://localhost:5180` with hot reload.
 
 To preview the production build locally:
 

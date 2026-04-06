@@ -328,6 +328,10 @@ body {
   margin: 0 0 40px;
 }
 
+.page-title--tight {
+  margin-bottom: 16px;
+}
+
 /* ─── Acting Page ──────────────────────────────────────── */
 .acting-bio-row {
   display: flex;
@@ -462,10 +466,6 @@ body {
   letter-spacing: 1px;
 }
 
-.credit-year {
-  font-size: 13px;
-  color: #4a4844;
-}
 
 /* Headshot Gallery */
 .headshot-gallery {
@@ -515,10 +515,6 @@ body {
   max-width: 600px;
 }
 
-.engineering-intro .page-title {
-  margin-bottom: 16px;
-}
-
 .projects-label {
   font-size: 11px;
   text-transform: uppercase;
@@ -558,7 +554,9 @@ body {
   width: 3px;
   height: 100%;
   opacity: 0.5;
+  background: var(--accent);
 }
+
 
 .project-header {
   display: flex;
