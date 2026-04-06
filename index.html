@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyler Diminick &mdash; Actor & Engineer</title>
+    <meta name="description" content="Tyler Diminick — actor, improviser, and full-stack engineer. Building things real and imagined." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grain"></div>
+
+    <!-- ─── Nav ──────────────────────────────────────────── -->
+    <nav class="nav">
+      <button class="nav-logo">Tyler Diminick</button>
+      <div class="nav-links">
+        <button class="nav-link" data-page="home">Home</button>
+        <button class="nav-link" data-page="acting">Acting</button>
+        <button class="nav-link" data-page="engineering">Engineering</button>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- HOME PAGE                                          -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <div id="home" class="page">
+      <div class="home-hero">
+        <div class="home-hero-glow"></div>
+
+        <div class="reveal" data-delay="200">
+          <div class="home-subtitle">Actor &nbsp;&middot;&nbsp; Engineer &nbsp;&middot;&nbsp; Builder</div>
+        </div>
+
+        <div class="reveal" data-delay="400">
+          <h1 class="home-title">Tyler Diminick</h1>
+        </div>
+
+        <div class="reveal" data-delay="600">
+          <p class="home-tagline">Building things real and imagined.</p>
+        </div>
+      </div>
+
+      <div class="reveal" data-delay="900">
+        <div class="dual-cards">
+          <!-- Acting Side -->
+          <button id="card-acting" class="dual-card" data-side="acting">
+            <div class="dual-card-bg"></div>
+            <div class="dual-card-content">
+              <div class="dual-card-icon acting">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.2">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+                  <path d="M2 4l3 2M22 4l-3 2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h2 class="dual-card-title">Acting</h2>
+              <p class="dual-card-desc">Reels, credits, headshots &amp; profiles</p>
+              <div class="dual-card-cta acting">Explore &rarr;</div>
+            </div>
+          </button>
+
+          <div class="dual-divider"></div>
+
+          <!-- Engineering Side -->
+          <button id="card-engineering" class="dual-card" data-side="engineering">
+            <div class="dual-card-bg"></div>
+            <div class="dual-card-content">
+              <div class="dual-card-icon engineering">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6ea0c9" stroke-width="1.2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                  <line x1="14" y1="4" x2="10" y2="20" />
+                </svg>
+              </div>
+              <h2 class="dual-card-title">Engineering</h2>
+              <p class="dual-card-desc">Projects, stack &amp; how I build</p>
+              <div class="dual-card-cta engineering">Explore &rarr;</div>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-text">&copy; 2026 Tyler Diminick &nbsp;&middot;&nbsp; Built with care</div>
+      </footer>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- ACTING PAGE                                        -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <div id="acting" class="page">
+      <div class="inner-page">
+        <div class="inner-page-content">
+
+          <div class="reveal" data-delay="100">
+            <div class="section-label acting">Acting Portfolio</div>
+          </div>
+
+          <div class="reveal" data-delay="200">
+            <h1 class="page-title">On Screen &amp; On Stage</h1>
+          </div>
+
+          <!-- Headshot + Bio -->
+          <div class="reveal" data-delay="350">
+            <div class="acting-bio-row">
+              <div class="headshot-placeholder">
+                <div class="headshot-placeholder-inner">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#5a5854" stroke-width="1" style="margin-bottom: 8px">
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <path d="M21 15l-5-5L5 21" />
+                  </svg>
+                  <div class="headshot-placeholder-label">Primary Headshot</div>
+                </div>
+              </div>
+              <div class="acting-bio">
+                <p>
+                  Tyler Diminick is a New York-based actor and improviser. He performs long-form improv
+                  regularly and has appeared in independent films, sketches, and digital content. When he's
+                  not on stage or on set, he's building software &mdash; which, honestly, is just another kind of
+                  performance.
+                </p>
+                <div class="profile-links">
+                  <button class="profile-link">IMDb</button>
+                  <button class="profile-link">Actors Access</button>
+                  <button class="profile-link">YouTube</button>
+                  <button class="profile-link">Instagram</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Demo Reel -->
+          <div class="reveal" data-delay="500">
+            <div class="demo-reel">
+              <h2 class="section-heading">Demo Reel</h2>
+              <div class="demo-reel-embed">
+                <div class="demo-reel-inner">
+                  <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                  <div class="demo-reel-label">YouTube Embed &mdash; Demo Reel</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Credits -->
+          <div class="reveal" data-delay="650">
+            <div class="credits">
+              <h2 class="section-heading">Selected Credits</h2>
+
+              <div class="credit-row">
+                <div>
+                  <span class="credit-title">Project Title</span>
+                  <span class="credit-role">Lead</span>
+                </div>
+                <div class="credit-meta">
+                  <span class="credit-type">Short Film</span>
+                  <span class="credit-year">2025</span>
+                </div>
+              </div>
+
+              <div class="credit-row">
+                <div>
+                  <span class="credit-title">Another Project</span>
+                  <span class="credit-role">Supporting</span>
+                </div>
+                <div class="credit-meta">
+                  <span class="credit-type">Web Series</span>
+                  <span class="credit-year">2024</span>
+                </div>
+              </div>
+
+              <div class="credit-row">
+                <div>
+                  <span class="credit-title">Stage Show Name</span>
+                  <span class="credit-role">Ensemble</span>
+                </div>
+                <div class="credit-meta">
+                  <span class="credit-type">Improv / Theater</span>
+                  <span class="credit-year">2024</span>
+                </div>
+              </div>
+
+              <div class="credit-row">
+                <div>
+                  <span class="credit-title">Yet Another Film</span>
+                  <span class="credit-role">Featured</span>
+                </div>
+                <div class="credit-meta">
+                  <span class="credit-type">Independent Film</span>
+                  <span class="credit-year">2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Headshot Gallery -->
+          <div class="reveal" data-delay="800">
+            <div class="headshot-gallery">
+              <h2 class="section-heading">Headshots</h2>
+              <div class="headshot-grid">
+                <div class="headshot-card"><span class="headshot-card-label">Commercial</span></div>
+                <div class="headshot-card"><span class="headshot-card-label">Theatrical</span></div>
+                <div class="headshot-card"><span class="headshot-card-label">Character</span></div>
+                <div class="headshot-card"><span class="headshot-card-label">Casual</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-text">&copy; 2026 Tyler Diminick &nbsp;&middot;&nbsp; Built with care</div>
+      </footer>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════ -->
+    <!-- ENGINEERING PAGE                                   -->
+    <!-- ═══════════════════════════════════════════════════ -->
+    <div id="engineering" class="page">
+      <div class="inner-page">
+        <div class="inner-page-content">
+
+          <div class="reveal" data-delay="100">
+            <div class="section-label engineering">Engineering</div>
+          </div>
+
+          <div class="reveal" data-delay="200">
+            <h1 class="page-title" style="margin-bottom: 16px">What I Build</h1>
+          </div>
+
+          <div class="reveal" data-delay="300">
+            <p class="engineering-intro">
+              Full-stack developer who ships real products. I build with Vue 3, Node.js, and PostgreSQL,
+              deployed on Cloudflare Pages and Hetzner infrastructure. I care about clean architecture,
+              fast load times, and building things people actually use.
+            </p>
+          </div>
+
+          <!-- Projects -->
+          <div class="reveal" data-delay="450">
+            <div class="projects">
+              <div class="projects-label">Featured Projects</div>
+              <div class="projects-grid">
+
+                <div class="project-card" style="--accent: #6ea0c9">
+                  <div class="project-accent" style="background: #6ea0c9"></div>
+                  <div class="project-header">
+                    <span class="project-name">The Career Actor</span>
+                    <span class="project-status" style="color: #6ea0c9; border: 1px solid rgba(110,160,201,0.2)">Live</span>
+                  </div>
+                  <p class="project-desc">A career management platform for working actors &mdash; audition tracking, booking management, and professional growth tools.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">Vue 3</span>
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">PostgreSQL</span>
+                    <span class="project-tag">Cloudflare</span>
+                  </div>
+                </div>
+
+                <div class="project-card" style="--accent: #c9a96e">
+                  <div class="project-accent" style="background: #c9a96e"></div>
+                  <div class="project-header">
+                    <span class="project-name">Improv Jam Manager</span>
+                    <span class="project-status" style="color: #c9a96e; border: 1px solid rgba(201,169,110,0.2)">In Development</span>
+                  </div>
+                  <p class="project-desc">An app for hosting and managing improv jam nights &mdash; participant sign-ups, pair generation, and show flow tools.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">Vue 3</span>
+                    <span class="project-tag">Fastify</span>
+                    <span class="project-tag">Neon</span>
+                  </div>
+                </div>
+
+                <div class="project-card" style="--accent: #7ec99e">
+                  <div class="project-accent" style="background: #7ec99e"></div>
+                  <div class="project-header">
+                    <span class="project-name">Project Three</span>
+                    <span class="project-status" style="color: #7ec99e; border: 1px solid rgba(126,201,158,0.2)">Open Source</span>
+                  </div>
+                  <p class="project-desc">Description of another project that demonstrates range and different problem-solving approaches.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">Tech</span>
+                    <span class="project-tag">Stack</span>
+                    <span class="project-tag">Here</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- How I Work -->
+          <div class="reveal" data-delay="600">
+            <div class="how-i-work">
+              <h2 class="section-heading">How I Work</h2>
+              <div class="how-i-work-body">
+                <p>
+                  I'm a solo full-stack developer who handles everything from database design to deployment
+                  pipelines. My go-to stack is <span class="tech-highlight">Vue 3</span> on the frontend,
+                  <span class="tech-highlight">Node.js</span> (Express or Fastify) on the backend, and
+                  <span class="tech-highlight">PostgreSQL</span> (via Neon) for data. I deploy frontends
+                  to <span class="tech-highlight">Cloudflare Pages</span> and run backend services on
+                  <span class="tech-highlight">Hetzner VPS</span> infrastructure with Docker. I prefer
+                  building real products over toy projects &mdash; software that solves actual problems I've
+                  encountered in my own life and work.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resume CTA -->
+          <div class="reveal" data-delay="750">
+            <div class="resume-cta">
+              <div>
+                <div class="resume-cta-text">Want the full picture?</div>
+                <div class="resume-cta-subtext">Download my r&eacute;sum&eacute; or check out my GitHub.</div>
+              </div>
+              <div class="resume-cta-buttons">
+                <button class="cta-button blue">R&eacute;sum&eacute; &darr;</button>
+                <button class="cta-button light">GitHub &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-text">&copy; 2026 Tyler Diminick &nbsp;&middot;&nbsp; Built with care</div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
