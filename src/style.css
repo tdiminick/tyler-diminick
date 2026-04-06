@@ -114,7 +114,8 @@ body {
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -335,27 +336,13 @@ body {
   flex-wrap: wrap;
 }
 
-.headshot-placeholder {
+.headshot-primary {
   width: 200px;
   height: 260px;
-  background: linear-gradient(145deg, #1a1a1e, #252528);
+  object-fit: cover;
   border-radius: 4px;
   border: 1px solid rgba(201, 169, 110, 0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-shrink: 0;
-}
-
-.headshot-placeholder-inner {
-  text-align: center;
-  color: #5a5854;
-}
-
-.headshot-placeholder-label {
-  font-size: 11px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .acting-bio {
@@ -486,21 +473,31 @@ body {
 }
 
 .headshot-card {
-  aspect-ratio: 3/4;
+  position: relative;
   background: linear-gradient(145deg, #1a1a1e, #202024);
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.04);
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 12px;
+  overflow: hidden;
+}
+
+.headshot-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .headshot-card-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #5a5854;
+  color: #b0aca6;
+  text-align: center;
+  padding: 8px 0;
+  background: linear-gradient(transparent, rgba(10, 10, 14, 0.8));
 }
 
 /* ─── Engineering Page ─────────────────────────────────── */

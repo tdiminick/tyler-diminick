@@ -13,6 +13,9 @@ function navigate(pageId) {
   document.getElementById(pageId).classList.add("active");
   document.querySelector(`[data-page="${pageId}"]`)?.classList.add("active");
 
+  // Update URL hash without triggering hashchange
+  history.replaceState(null, "", pageId === "home" ? "/" : `#${pageId}`);
+
   // Re-trigger reveal animations
   const activeRevealElements = document
     .getElementById(pageId)
@@ -28,6 +31,11 @@ function navigate(pageId) {
   });
 
   window.scrollTo({ top: 0 });
+}
+
+function getPageFromHash() {
+  const hash = location.hash.replace("#", "");
+  return document.getElementById(hash) ? hash : "home";
 }
 
 // Nav link clicks
@@ -64,5 +72,5 @@ function setupDualCards() {
 
 setupDualCards();
 
-// Kick off the home page reveals on load
-navigate("home");
+// Navigate to the page in the URL hash, or home
+navigate(getPageFromHash());
