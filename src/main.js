@@ -54,8 +54,10 @@ function setupDualCards() {
     const side = card.dataset.side;
 
     function setHover(hovering) {
-      card.style.flex = hovering ? "1.3" : "1";
-      other.style.flex = hovering ? "0.7" : "1";
+      if (window.innerWidth > 640) {
+        card.style.flex = hovering ? "1.3" : "1";
+        other.style.flex = hovering ? "0.7" : "1";
+      }
       card.classList.toggle(`hovered-${side}`, hovering);
     }
 

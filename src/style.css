@@ -696,3 +696,102 @@ body {
   color: #4a4844;
   letter-spacing: 1px;
 }
+
+/* ─── Mobile ──────────────────────────────────────────── */
+@media (max-width: 640px) {
+  /* Nav */
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  /* Home hero */
+  .home-hero {
+    height: auto;
+    min-height: 40vh;
+    padding: 100px 20px 40px;
+  }
+
+  .home-hero-glow {
+    width: 300px;
+    height: 250px;
+  }
+
+  .home-title {
+    font-size: clamp(36px, 10vw, 64px);
+  }
+
+  /* Dual cards */
+  .dual-cards {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .dual-card {
+    padding: 40px 20px;
+  }
+
+  .dual-card-icon {
+    width: 80px;
+    height: 100px;
+    margin-bottom: 16px;
+  }
+
+  .dual-divider {
+    width: auto;
+    height: 1px;
+  }
+
+  /* Inner pages */
+  .inner-page {
+    padding-top: 80px;
+  }
+
+  .inner-page-content {
+    padding: 0 20px;
+  }
+
+  /* Acting: bio row */
+  .acting-bio-row {
+    gap: 24px;
+  }
+
+  .headshot-primary {
+    align-self: center;
+  }
+
+  /* Acting: headshot gallery */
+  .headshot-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+
+  /* Engineering: project cards */
+  .project-card {
+    padding: 20px;
+  }
+
+  .how-i-work-body {
+    padding: 20px;
+  }
+
+  /* Engineering: CTA */
+  .resume-cta {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resume-cta-buttons {
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 20px;
+  }
+}
