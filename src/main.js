@@ -8,7 +8,7 @@ const engineeringCard = document.getElementById("card-engineering");
 
 let revealTimers = [];
 
-function navigate(pageId) {
+function navigate(pageId, { pushHistory = true } = {}) {
   revealTimers.forEach(clearTimeout);
   revealTimers = [];
 
@@ -19,8 +19,8 @@ function navigate(pageId) {
   page.classList.add("active");
   document.querySelector(`[data-page="${pageId}"]`)?.classList.add("active");
 
-  const url = pageId === "home" ? "/" : `#${pageId}`;
-  if (location.hash.replace("#", "") !== pageId) {
+  if (pushHistory) {
+    const url = pageId === "home" ? "/" : `#${pageId}`;
     history.pushState(null, "", url);
   }
 
@@ -49,6 +49,8 @@ navLinks.forEach((link) => {
 navLogo.addEventListener("click", () => navigate("home"));
 
 // Home page dual-card hover effect
+const desktopQuery = window.matchMedia("(min-width: 641px)");
+
 function setupDualCards() {
   const cards = [actingCard, engineeringCard];
 
@@ -57,7 +59,7 @@ function setupDualCards() {
     const side = card.dataset.side;
 
     function setHover(hovering) {
-      if (window.innerWidth > 640) {
+      if (desktopQuery.matches) {
         card.style.flex = hovering ? "1.3" : "1";
         other.style.flex = hovering ? "0.7" : "1";
       }
@@ -74,6 +76,6 @@ function setupDualCards() {
 
 setupDualCards();
 
-window.addEventListener("popstate", () => navigate(getPageFromHash()));
+window.addEventListener("popstate", () => navigate(getPageFromHash(), { pushHistory: false }));
 
-navigate(getPageFromHash());
+navigate(getPageFromHash(), { pushHistory: false });
