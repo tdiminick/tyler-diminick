@@ -664,6 +664,7 @@ body {
   cursor: pointer;
   background: none;
   font-family: inherit;
+  text-decoration: none;
   transition: border-color 0.3s ease;
 }
 
